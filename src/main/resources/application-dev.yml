@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+#设置打印日志
+logging:
+  level:
+    com.kai: debug
+    org.springframework.jdbc: debug
+    org.springframework.core: info
+  config: classpath:logback-spring.xml
