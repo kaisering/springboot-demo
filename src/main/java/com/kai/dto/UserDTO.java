@@ -2,6 +2,7 @@ package com.kai.dto;
 
 import com.kai.validation.group.ValidationGroup;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
@@ -16,6 +17,7 @@ import java.util.List;
  * @date 2021/12/18
  */
 @Data
+@Accessors(chain = true)
 public class UserDTO {
     @NotBlank(message = "userId can not be null", groups = ValidationGroup.FirstGroup.class)
     private String userId;
@@ -27,5 +29,5 @@ public class UserDTO {
     private Integer age;
     //    @Size(min = 0, message = "list can not be empty")
     @Valid
-    private List<UserDTO> list = new ArrayList();
+    private List<UserDTO> list = new ArrayList<>();
 }

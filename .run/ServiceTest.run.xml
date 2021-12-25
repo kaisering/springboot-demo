@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ServiceTest" type="JUnit" factoryName="JUnit">
+    <module name="springboot-demo" />
+    <extension name="coverage" sample_coverage="false" track_test_folders="true">
+      <pattern>
+        <option name="PATTERN" value="com.kai.controller.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="com.kai.service" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="package" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
